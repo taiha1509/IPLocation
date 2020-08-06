@@ -13,9 +13,6 @@
         "packagesPath": "C:\\Users\\ntha4\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ntha4\\source\\repos\\IPLocation\\IPLocation\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\ntha4\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -63,9 +60,17 @@
               "target": "Package",
               "version": "[2.11.0, )"
             },
+            "NuGet.Configuration": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.1.58, )"
+            },
+            "mongocsharpdriver": {
+              "target": "Package",
+              "version": "[2.11.0, )"
             }
           },
           "imports": [
@@ -78,6 +83,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -86,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

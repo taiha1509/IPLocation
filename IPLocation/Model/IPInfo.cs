@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,6 +9,9 @@ namespace IPLocation.Model
 {
     public class IPInfo
     {
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string _id { get; set; }
         public int ID { get; set; }
         public byte[] IPFrom { get; set; }
         public byte[] IPTo { get; set; }

@@ -124,7 +124,7 @@ namespace IPLocation.Sql
                             }
                             else if (reader[j].GetType() == typeof(Byte[]))
                             {                               
-                                bson.Add(new BsonElement(reader.GetName(j), BsonValue.Create(ByteArrayToString((byte[])reader[j]))));
+                                bson.Add(new BsonElement(reader.GetName(j), BsonValue.Create(reader[j] as byte[])));
                             }
                             else
                                 throw new Exception();

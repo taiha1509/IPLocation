@@ -48,7 +48,16 @@ namespace IPLocation.Redis
                 db.ListRemove(key, value);
             }
         }
-        
+
+        public T GetValue<T>(string IP)
+        {
+            var db = GetRedisDb();
+
+            //string res = db.ListRange(IP, 0, 0).GetValue(0);
+            string res = (string)db.ListRange(IP, 0, 0).ElementAt(0);
+            return Deserialize<T>(res);
+        }
+
         //add an element at the tail of list, if specific list doesnt exist then a empty list will be created
         public void Add(T item, string key)
         {
