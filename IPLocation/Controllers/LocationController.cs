@@ -7,6 +7,7 @@ using IPLocation.Redis;
 using IPLocation.Repository;
 using IPLocation.Service;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -24,11 +25,12 @@ namespace IPLocation.Controllers
             _IPInfoRepository = IPInfoRepository;
         }
 
-        // GET: api/Location
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet("Hex")]
+        public string Hex(string IP)
         {
-            return new string[] { "value1", "value2" };
+            byte[] b = IPHandlers.StringToByteArray(IP);
+            string str = IPHandlers.IPByteArrayToStringEncodeBase64(b);
+            return str;
         }
 
         // GET: api/Location/10.0.0.8

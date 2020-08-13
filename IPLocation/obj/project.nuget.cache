@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Sv+h0ig86JU8jx0g2WLz04F+aenlYNiI5DYlXkMniVML4Ybc8B1K+JJFErlH1AwKAhmooRfMgrE8CJwh4VL+tg==",
+  "dgSpecHash": "Z7TJVT087JYr0dY13g/5XA8Kw76ekGISbK0yOtbfb/7Eknn7/j1Wt5/PKhx2NXIQCekfY2w9QgAEgFIAEDsYbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ntha4\\source\\repos\\IPLocation\\IPLocation\\IPLocation.csproj",
   "expectedPackageFiles": [
@@ -176,8 +176,7 @@
     "C:\\Users\\ntha4\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\ntha4\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\ntha4\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\ntha4\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\ntha4\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\ntha4\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": [
     {
